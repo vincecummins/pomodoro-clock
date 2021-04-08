@@ -1,13 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+:root {
+  --purple: #3e017a;
+  --white: #f5f5f5;
+  --blue: #002254
+}
+h1 {
+  margin-bottom: 0;
+  font-family: Dancing Script;
+}
+
+h3 {
+  font-family: Dancing Script;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: Helvetica,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+  color: var(--white);
+  text-align: center;
+  box-sizing: content-box;
+  font-size: 1.1em;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background-color: var(--purple);
+  padding: 1.5em;
+  border-radius: 1em;
+  margin: 0;
+  width: 70%;
+  max-width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.settime {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--purple);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: var(--white);
+}
+
+.counters {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.counters > div {
+  margin: 20px 10px
+}
+
+.timerIcons {
+  display: flex;
+  justify-content: center;
+}
+.timerIcons > div {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.timerIcons :hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.stageHeading {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Dancing Script;
+}
+.stageHeading :hover {
+  display: none;  
+}
+
+.currTime {
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid white;
+  width: 200px;
+  border-radius: 0.6em;
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.countdown {
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
